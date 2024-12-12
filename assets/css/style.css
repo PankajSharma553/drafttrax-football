@@ -5,9 +5,6 @@
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 :root {
   /* color */
@@ -28,7 +25,7 @@ html {
 
 body {
   font-family: var(--primary-font);
-  background-color: var(--light-black);
+  /* background-color: var(--light-black); */
 }
 
 .container {
@@ -95,7 +92,7 @@ a {
   font-size: 60px;
   font-weight: 400;
   line-height: normal;
-  color: var(--white-color);
+  /* color: var(--white-color); */
   margin-bottom: 30px;
 }
 
@@ -192,7 +189,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: var(--light-black);
+  background-color: var(--blue-light);
 }
 
 .header_wrappr {
@@ -422,7 +419,10 @@ background-color: rgba(0, 0, 0, 0.4);
   padding:24px;
   transition: 0.3s ease-in-out;
   border: 1px solid var(--white-color);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgba(0 0 0 / 5%);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* box-shadow: rgb(100, 100, 111, 0.5) 0px 7px 29px 0px, #2955bb 0px 7px 29px 0px; */
+
 }
 .why_card:hover .why_imgSec{
   background-color: var(--white-color);
@@ -431,7 +431,8 @@ background-color: rgba(0, 0, 0, 0.4);
  filter: invert(0);
 }
 .why_card:hover{
-  background-color: var(--pre-blue);
+  /* background-color: var(--pre-blue); */
+  background-color: var(--blue-light);
   border-color: transparent;
 }
 .why_card:hover .why_title, .why_card:hover .why_desc{
@@ -488,7 +489,8 @@ margin-block: 60px 80px;
   background-color: var(--blue-light);
 }
 .accordion_head {
-  background-color: var(--pre-blue);
+  /* background-color: var(--pre-blue); */
+  background-color: var(--blue-light);
   width: 100%;
   padding: 14px 10px;
   font-size: 22px;
@@ -498,7 +500,7 @@ margin-block: 60px 80px;
   transition: all 0.5s linear;
 }
 .accordion_head:hover {
-  background-color: #0056b3;
+  background-color:var(--pre-blue);
 }
 .accordion_head::before,
 .accordion_head::after {
@@ -591,7 +593,9 @@ max-width: 100%;
   color: #555;
   margin-bottom: 15px;
 }
-
+.testimonial_title{
+color: var(--blue-light);
+}
 .user-name {
   font-size: 1rem;
   font-weight: bold;
@@ -612,13 +616,12 @@ max-width: 100%;
   font-size: 30px;
   width: 24px;
   height: 24px;
-  color: var(--white-color);
   opacity: 1;
  
 }
 .slick-dots li.slick-active button:before {
   opacity:1;
-  color:var(--dark-blue);
+  color:var(--blue-light);
 }
 
 
@@ -626,6 +629,7 @@ max-width: 100%;
 .footer {
   color: var(--white-color);
   box-shadow: 1px 1px 20px 1px var(--white-color);
+  background-color:var(--blue-light);
 }
 
 .footer_wrapper {
@@ -1687,7 +1691,7 @@ img {
 }
 
 .disclaimer h3 {
-  color: var(--pre-blue);
+  color: var(--blue-light);
   margin-bottom: 30px;
   font-size: 25px;
 }
