@@ -119,6 +119,8 @@ $(document).ready(function() {
       centerPadding: '0px',
       slidesToShow: 3,
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
       responsive: [
           {
               breakpoint: 768,

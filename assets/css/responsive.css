@@ -7,6 +7,10 @@
     width: 100px;
   }
 
+  .playing {
+    margin-top: 70px;
+  }
+
   .footer_icon {
     width: 100px;
   }
@@ -14,10 +18,49 @@
 
 /* media query 1200 */
 @media (max-width: 1200px) {
+  .banner {
+    height: 450px;
+  }
+
+  .heading {
+    font-size: 55px;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .why {
+    margin-block: 50px 70px;
+  }
+
+  .singup {
+    margin-bottom: 32px;
+  }
+
+  .faq {
+    margin-bottom: 70px;
+  }
+
+  .testimonial {
+    margin-block: 0 70px;
+  }
+
+  .testimonial-card {
+    height: 100%;
+  }
+
   .singup_heading {
     font-size: 36px;
     margin-bottom: 20px;
   }
+
+  .playing {
+    margin-top: 75px;
+  }
+
+
   .header_list {
     flex-direction: column;
     gap: 16px;
@@ -26,13 +69,16 @@
     margin-bottom: 0;
     padding-bottom: 5px;
   }
+
   .header_right {
     flex-direction: column;
     gap: 16px;
   }
+
   .humburger {
     display: flex;
   }
+
   .header_navbar {
     flex-direction: column;
     justify-content: start;
@@ -78,21 +124,7 @@
     margin-bottom: 48px;
     margin-top: 16px;
   }
-
-  .choose_icon {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 14px;
-  }
-
-  .choose_title {
-    font-size: 24px;
-    margin-bottom: 22px;
-  }
-
-  .choose_desc {
-    font-size: 18px;
-  }
+ 
   .form-container {
     padding: 20px;
   }
@@ -100,15 +132,59 @@
 
 /* media query 1024 */
 @media (max-width: 1024px) {
+  .banner {
+    height: 400px;
+  }
+
+  .heading {
+    font-size: 50px;
+    margin-bottom: 26px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .why {
+    margin-block: 48px 60px;
+  }
+
+  .faq {
+    margin-bottom: 60px;
+  }
+
+  .testimonial {
+    margin-block: 0 60px;
+  }
+
+  .playing {
+    margin-top: 60px;
+  }
+
+  .singup {
+    padding-block: 60px;
+    height: 450px;
+  }
+
+  .testimonial_wrapper {
+    padding: 20px;
+  }
+
   .section {
     margin-block: 3rem;
   }
+
   .form-container {
     padding: 18px;
   }
+
   .singup_heading {
     font-size: 32px;
     margin-bottom: 18px;
+  }
+
+  .playing_inner {
+    margin-bottom: 28px;
   }
 
   .banner_heading {
@@ -140,12 +216,35 @@
 
 /* media query 991 */
 @media (max-width: 991px) {
-  .howtoPlay {
-    margin-block: 4rem;
+  .heading {
+    font-size: 48px;
+    margin-bottom: 24px;
   }
 
-  .howtoPlay_title {
-    font-size: 30px;
+  .singup {
+    padding-block: 50px;
+    height: 400px;
+  }
+
+  .playing_inner {
+    margin-bottom: 24px;
+  }
+
+  .playing_inner {
+    flex-direction: column;
+  }
+
+  .playing_left,
+  .playing_right {
+    width: 100%;
+  }
+
+  .playing_content {
+    padding: 8px;
+  }
+
+  .playing_item {
+    margin-left: 20px;
   }
 
   .banner_heading,
@@ -179,16 +278,6 @@
     height: 600px;
     margin: 50px 0;
   }
-
-  .choose_title {
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-
-  .choose {
-    height: 100%;
-  }
-
   .leagues {
     margin-bottom: 50px;
   }
@@ -207,11 +296,6 @@
     width: 100%;
     background-color: #000;
     opacity: 0.5;
-  }
-
-  .choose_sec {
-    width: 47%;
-    margin-bottom: 1rem;
   }
 
   .singup_tobar {
@@ -291,24 +375,84 @@
     z-index: 1;
   }
 
-  .howtoPlay_sec {
-    width: 49%;
-  }
-
   .banner-content h1 {
     font-size: 38px;
   }
-  .why_inner{
-    grid-template-columns: repeat(2,1fr);
+
+  .why_inner {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
 
 /* media query 768 */
 @media (max-width: 768px) {
+  .accordion_question {
+    margin-right: 32px;
+}
+  .banner {
+    height: 350px;
+  }
+
+  .heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .why {
+    margin-block: 40px;
+  }
+
+  .testimonial {
+    margin-block: 0 40px;
+  }
+
+  .singup {
+    margin-bottom: 28px;
+  }
+
+  .testimonial_wrapper {
+    padding: 16px;
+  }
+
+  .playing_inner {
+    padding: 14px;
+  }
+
+  .playing_title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .playing_desc {
+    margin-bottom: 12px;
+  }
+
+  .playing_inner {
+    margin-bottom: 16px;
+  }
+
+  .faq {
+    margin-bottom: 48px;
+  }
+
+  .singup {
+    padding-block: 48px;
+    height: 350px;
+  }
+
+  .playing {
+    margin-top: 48px;
+  }
+
   .section {
     margin-block: 2rem;
   }
+
   .banner-content h1 {
     font-size: 32px;
   }
@@ -317,12 +461,14 @@
     height: 350px;
   }
 
-  .howtoPlay {
-    margin-block: 3rem;
+  .desc_help {
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
-  .howtoPlay_title {
-    font-size: 28px;
+  .faq_wrapper {
+    margin: 32px auto;
+    padding: 16px;
   }
 
   .singup_heading {
@@ -388,24 +534,6 @@
     font-size: 18px;
   }
 
-  .choose_sec {
-    width: 100%;
-  }
-
-  .choose_heading {
-    font-size: 38px;
-    margin-bottom: 30px;
-  }
-
-  .choose_title {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .choose_desc {
-    font-size: 18px;
-  }
-
   .leagues_wrapper {
     flex-direction: column;
   }
@@ -429,6 +557,7 @@
     margin-bottom: 24px;
     margin-top: 12px;
   }
+
   .footer_content {
     padding-block: 38px;
   }
@@ -448,9 +577,6 @@
     height: 24px;
   }
 
-  .how-wrap {
-    width: 100%;
-  }
 
   .contact_left {
     width: 100%;
@@ -466,40 +592,101 @@
     flex-wrap: wrap;
   }
 
-  .howtoPlay_sec {
-    width: 100%;
+  .why_inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 
-  .howtoPlay_img {
-    height: 250px;
+  .why_card {
+    padding: 20px;
   }
-  .why_inner {
-    grid-template-columns: repeat(1,1fr);
-    gap: 20px;
-}
 }
 
 /* media query 575 */
 @media (max-width: 575px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner_desc {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .why {
+    margin-block: 32px;
+  }
+
+  .why_card {
+    padding: 12px;
+  }
+
+  .testimonial {
+    margin-block: 0 32px;
+  }
+
+  .playing_inner {
+    padding: 12px;
+  }
+
+  .playing_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .playing_desc {
+    margin-bottom: 8px;
+  }
+
+  .singup {
+    margin-bottom: 24px;
+  }
+
+  .faq_wrapper {
+    margin: 24px auto;
+    padding: 12px;
+  }
+
+  .faq {
+    margin-bottom: 32px;
+  }
+
+  .playing {
+    margin-top: 32px;
+  }
+
+  .testimonial_wrapper {
+    padding: 8px;
+  }
+
+  .playing_item {
+    margin-left: 12px;
+  }
+
+  .playing_subTitle {
+    font-size: 16px;
+  }
+
+  .why_imgSec {
+    width: 54px;
+    height: 54px;
+  }
+
+  .why_img {
+    width: 44px;
+    height: 44px;
+  }
+
   .pages-banner {
     height: 300px;
   }
 
   .banner-content h1 {
     font-size: 30px;
-  }
-
-  .howtoPlay {
-    margin-block: 2rem;
-  }
-
-  .howtoPlay_title {
-    font-size: 24px;
-    margin-bottom: 6px;
-  }
-
-  .howtoPlay_desc {
-    font-size: 16px;
   }
 
   .singup_heading {
@@ -537,19 +724,6 @@
     margin-bottom: 20px;
   }
 
-  .choose_title {
-    margin-bottom: 8px;
-  }
-
-  .choose_heading {
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-
-  .choose_desc {
-    font-size: 16px;
-  }
-
   .singup_tobar {
     margin-bottom: 50px;
   }
@@ -559,7 +733,13 @@
   }
 
   .footer_title {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .footer_link {
+    margin-bottom: 12px;
+    font-size: 16px;
   }
 
   .singup_left {
@@ -599,9 +779,11 @@
   .form_bg .container .form_container {
     padding: 30px 14px;
   }
+
   .form-container {
     padding: 16px;
   }
+
   .navbar {
     padding: 20px 0;
   }
@@ -619,6 +801,7 @@
   .header_right {
     margin: 0 auto;
   }
+
   #login-signup {
     padding: 12px;
   }
