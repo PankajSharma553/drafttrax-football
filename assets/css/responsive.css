@@ -805,6 +805,10 @@
   #login-signup {
     padding: 12px;
   }
+  .footer_btmSec {
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }
 
 /*==============================>>> */
