@@ -56,7 +56,7 @@ ul {
 }
 
 ul li {
-  line-height:150%;
+  line-height: 150%;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 3px;
@@ -157,33 +157,36 @@ textarea::placeholder {
   padding: 24px;
   border-radius: 4px;
   margin: 0 auto;
-  box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px;
+  box-shadow: rgb(7 7 7 / 10%) 0px 7px 29px 0px;
 }
 
 .sec_heading {
   font-size: 42px;
   font-weight: 800;
   text-align: center;
-  color: var(--white-color);
+  color: var(--blue-light);
   line-height: 150%;
   margin-bottom: 40px;
 }
 
 .sec_title {
   font-size: 24px;
-  font-weight: 500;
-  color: var(--drak-green);
+  color: var(--black-color);
+  font-weight: 600;
+  color: var(--blue-light);
   margin-block: 10px;
 }
 
 .sub_title {
   color: var(--blue-light);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
 
 .sec_desc {
   font-size: 16px;
   font-weight: 400;
-  color: var(--white-color);
   margin-bottom: 8px;
   line-height: 150%;
 }
@@ -195,18 +198,17 @@ textarea::placeholder {
 .sec_item {
   list-style: disc;
   margin-left: 16px;
-  color: var(--white-color);
+  /* color: var(--white-color); */
   line-height: 150%;
   margin-bottom: 4px;
 }
 
 .sec_item strong {
-  color: var(--drak-green);
-
+  color: var(--blue-light);
 }
 
 .sec_item::marker {
-  color: var(--drak-green);
+  color: var(--blue-light);
 }
 
 /* header section */
@@ -233,7 +235,7 @@ textarea::placeholder {
 .header_logoLnk {
   background-image: url(../images/logo.svg);
   height: 65px;
-  width: 100px;
+  width: 140px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -244,7 +246,7 @@ textarea::placeholder {
   /* width: 75%; */
   display: flex;
   justify-content: end;
-  align-items: baseline;
+  align-items: center;
 }
 
 .header_list {
@@ -352,6 +354,38 @@ textarea::placeholder {
   margin-bottom: 40px;
 }
 
+.playinGuide_banner {
+  background-image: url("../images/playing-game.jpg");
+
+}
+
+.banner--term {
+  background-image: url("../images/terms-banner-image.jpg");
+
+}
+
+.banner_privacy {
+  background-image: url("../images/privacy-banner-image.jpg");
+}
+
+.banner_about {
+  background-image: url("../images/about_imges.jpg");
+
+}
+
+.banner_personalData {
+  background-image: url("../images/personal-data-img.jpg");
+
+}
+
+.banner_leagues {
+  background-image: url("../images/leagues-icons.jpg");
+}
+
+.banner_matchesDtls {
+  background-image: url("../images/matches-details.jpg");
+}
+
 .banner::after {
   position: absolute;
   content: "";
@@ -363,7 +397,8 @@ textarea::placeholder {
 }
 
 .banner_content {
-  max-width: 700px;
+  /* max-width: 700px; */
+  max-width: 900px;
   text-align: center;
   width: 100%;
   padding-inline: 4px;
@@ -443,7 +478,7 @@ textarea::placeholder {
 
 /* why section */
 .why {
-  margin-block:60px 80px;
+  margin-block: 60px 80px;
 }
 
 .why_inner {
@@ -468,6 +503,7 @@ textarea::placeholder {
 .why_card:hover .why_imgSec {
   background-color: var(--white-color);
 }
+
 
 .why_card:hover .why_img {
   filter: invert(0);
@@ -509,6 +545,31 @@ textarea::placeholder {
   transition: 0.3s ease-in-out;
 }
 
+.why_imgSec--advance .why_img {
+  background-image: url("../images/advance-player.png");
+
+}
+
+.why_imgSec--leagues .why_img {
+  background-image: url("../images/custom-fantasy.png");
+}
+
+.why_imgSec--realTime .why_img {
+  background-image: url("../images/real-time.png");
+}
+
+.why_imgSec--userexp .why_img {
+  background-image: url("../images/user-experience.png");
+}
+
+.why_imgSec--trust .why_img {
+  background-image: url("../images/trust.png");
+}
+
+.why_imgSec--hub .why_img {
+  background-image: url("../images/network.png");
+}
+
 .why_content {
   text-align: center;
 }
@@ -519,7 +580,7 @@ textarea::placeholder {
 
 /*accordion section*/
 .faq {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .faq_wrapper {
@@ -620,7 +681,8 @@ margin-bottom: 80px;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
-.desc_help{
+
+.desc_help {
   font-size: 20px;
   margin-bottom: 10px;
   color: var(--blue-light);
@@ -738,7 +800,7 @@ margin-bottom: 80px;
 .footer_icon {
   background-image: url("../images/logo.svg");
   height: 65px;
-  width: 100px;
+  width: 140px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -875,6 +937,7 @@ margin-bottom: 80px;
   padding: 16px;
   border-radius: 8px;
 }
+
 .playing_inner--right {
   flex-direction: row-reverse;
 }
@@ -893,6 +956,18 @@ margin-bottom: 80px;
   height: 400px;
   border-radius: 8px;
 }
+.playing_img--draft {
+  background-image: url("../images/playin-guide1.jpg");
+
+}
+.playing_img--team{
+  background-image: url("../images/playing-guide2.jpg");
+
+}
+.playing_img--lineup{
+  background-image: url("../images/playing-guide3.jpg");
+
+}
 
 .playing_title {
   font-size: 24px;
@@ -907,13 +982,15 @@ margin-bottom: 80px;
   margin-bottom: 8px;
   color: var(--black-color);
 }
-.playing_subTitle strong{
+
+.playing_subTitle strong {
   color: var(--blue-light);
 }
 
-.playing_desc{
+.playing_desc {
   margin-bottom: 1rem;
 }
+
 .playing_content {
   padding: 20px;
 }
@@ -922,15 +999,20 @@ margin-bottom: 80px;
   list-style-type: disc;
   margin-bottom: 12px;
 }
-.playing_item{
-margin-left: 24px;
+
+.playing_item {
+  margin-left: 24px;
 }
+
 .playing_list--num .playing_item {
   list-style-type: decimal;
 }
-.playing_item strong{
 
-color: var(--blue-light);}
+.playing_item strong {
+
+  color: var(--blue-light);
+}
+
 .playing_item::marker {
   color: var(--blue-light);
 }
@@ -1038,67 +1120,27 @@ color: var(--blue-light);}
 }
 
 .submit_btn:hover {
-  color: var(--white-color);
+  border-color: var(--blue-light);
+  color: var(--blue-light);
 }
-
-/* about section */
-
-.sec_content {
-  max-width: 1024px;
-  width: 100%;
-  padding: 24px;
-  border-radius: 4px;
-  margin: 0 auto;
-  box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px;
-}
-
-.sec_heading {
-  font-size: 42px;
-  font-weight: 800;
-  text-align: center;
-  color: var(--white-color);
-  line-height: 150%;
-  margin-bottom: 40px;
-}
-
-
-
-.sec_desc {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--white-color);
-  margin-bottom: 8px;
-  line-height: 150%;
-}
-
-.sec_list {
-  margin-bottom: 16px;
-}
-
-.sec_item {
-  list-style: disc;
-  margin-left: 16px;
-  color: var(--white-color);
-  line-height: 150%;
-  margin-bottom: 4px;
-}
-
-.sec_item strong {
-  color: var(--pink-color);
-}
-
 
 /* contact us section */
 .contact_wrapper {
   padding: 24px;
   border-radius: 4px;
-  box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px;
+  box-shadow: rgb(7 7 7 / 10%) 0px 7px 29px 0px
+    /* box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px; */
 }
 
 .contact_inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.contact_inner textarea {
+  border: 1px solid #dee2e6;
+  margin-bottom: 16px;
 }
 
 .contact_left {
@@ -1114,7 +1156,7 @@ color: var(--blue-light);}
 }
 
 .contact_rightImg {
-  background-image: url("../images/contact-us.jpg");
+  background-image: url("../images/contact-page-image.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -1135,7 +1177,13 @@ color: var(--blue-light);}
   padding: 9px 32px;
 }
 
+.contact_left .submit_btn {
+  margin-top: 16px;
+}
+
 /* =======================>>> */
+
+
 .footer_list {
   padding-left: 0;
 }
@@ -1210,7 +1258,7 @@ img {
   margin: 0 auto
 }
 
-.bg-center {
+/* .bg-center {
   background-position: center;
 }
 
@@ -1224,7 +1272,7 @@ img {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
+} */
 
 .w-100 {
   width: 100%;
@@ -1552,12 +1600,6 @@ img {
   text-align: center;
 }
 
-/* .leagues_content h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #070d29;
-} */
-
 .leagues_content p {
   margin-bottom: 10px;
 }
@@ -1858,16 +1900,15 @@ img {
 
 /* Pages CSS Start */
 
-.pages-banner {
+/* .pages-banner {
   height: 450px;
   position: relative;
-  /* margin-top: 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-}
-
+} */
+/* 
 .pages-banner::after {
   position: absolute;
   content: '';
@@ -1890,7 +1931,7 @@ img {
   text-align: center;
 }
 
-
+ */
 
 
 /* Game Instructions Page CSS Start */
@@ -2026,8 +2067,7 @@ img {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
-  /* color: #12e1b9; */
-  color: var(--white-color);
+  color: var(--blue-light);
 }
 
 #login-signup h4 {
@@ -2099,7 +2139,7 @@ fieldset {
 }
 
 .jump-text {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .jump-text a {
@@ -2202,12 +2242,6 @@ fieldset {
   vertical-align: middle;
 }
 
-.fusball_leagues-inner h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 50px;
-}
 
 .fusball_leagues thead tr th {
   padding: 20px 30px;
@@ -2276,7 +2310,7 @@ fieldset {
 }
 
 .fusball_leagues-inner h2 {
-  color: #12e1b9;
+  color: var(--blue-light);
   text-align: center;
   font-size: 30px;
   margin-bottom: 50px;
@@ -2297,12 +2331,6 @@ fieldset {
   opacity: 0.9;
 }
 
-.fusball_leagues-inner h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 50px;
-}
 
 .palyer-header {
   color: #fff;
@@ -2319,17 +2347,6 @@ fieldset {
   margin-right: auto;
   position: relative;
   z-index: 1;
-}
-
-.palyer-header::after {
-  background: #fafb63;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  z-index: -1;
-  border-radius: 14px;
 }
 
 .palyer-header .team-logo img {
@@ -2554,7 +2571,7 @@ td.player-dp img {
 }
 
 .matches-table th {
-  background: #12e1b9 !important;
+  background: var(--pre-blue) !important;
   color: #000 !important;
 }
 
@@ -2654,7 +2671,6 @@ td.player-dp img {
 .match-team-inner-image10 {
   background-image: url("../images/regionalliga.png");
 }
-
 
 .matches-table td.match-team-logo:last-child .match-team-inner {
   justify-content: flex-end;
@@ -3060,7 +3076,7 @@ div#mySidenavs {
 .avatar-content svg {
   height: 20px;
   width: 20px;
-  background: #12e1b9;
+  background: var(--white-color);
 }
 
 .profile-dropdown-options {
@@ -3276,7 +3292,6 @@ span.edit_pan i {
 }
 
 .para {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.556;
@@ -3467,7 +3482,7 @@ td.player-name p {
 }
 
 .palyer-header::after {
-  background: #12e1b9;
+  background: var(--pre-blue);
   position: absolute;
   inset: 0;
   width: 100%;
@@ -3594,7 +3609,6 @@ td.player-name p {
 
 .leagues-pages {
   height: 300px;
-  background-image: url("../images/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3610,6 +3624,10 @@ td.player-name p {
 .contact-banner {
   background-image: url("../images/contact-banner-image.jpg");
   background-color: rgba(0 0 0/20%);
+}
+
+.banner_matches {
+  background-image: url("../images/matches.jpg");
 }
 
 .after-banner-text-wrap strong {
@@ -3920,6 +3938,22 @@ fieldset {
   background-color: rgba(0 0 0/20%);
 }
 
+.banner_teamView {
+  background-image: url("../images/team-view.jpg");
+}
+
+.banner_teamPlayer {
+  background-image: url("../images/team_player.jpg");
+}
+
+.banner_myProfile {
+  background-image: url("../images/my-profile.jpg");
+}
+
+.banner_myMatches {
+  background-image: url("../images/my_matches.jpg");
+
+}
 
 
 /* Footer Pages CSS End*/
