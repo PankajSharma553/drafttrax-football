@@ -124,7 +124,7 @@
     margin-bottom: 48px;
     margin-top: 16px;
   }
- 
+
   .form-container {
     padding: 20px;
   }
@@ -218,18 +218,22 @@
 @media (max-width: 991px) {
   .sec_content {
     padding: 20px;
-}
+  }
+
   .heading {
     font-size: 48px;
     margin-bottom: 24px;
   }
+
   .sec_title {
     font-size: 22px;
     margin-block: 8px;
-}
-.sub_title {
-  margin-bottom: 12px;
-}
+  }
+
+  .sub_title {
+    margin-bottom: 12px;
+  }
+
   .singup {
     padding-block: 50px;
     height: 400px;
@@ -287,6 +291,7 @@
     height: 600px;
     margin: 50px 0;
   }
+
   .leagues {
     margin-bottom: 50px;
   }
@@ -391,6 +396,12 @@
   .why_inner {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact_wrapper {
+    padding: 20px;
+}
+.contact_inner {
+  margin-bottom: 40px;
+}
 
 }
 
@@ -398,17 +409,21 @@
 @media (max-width: 768px) {
   .sec_content {
     padding: 16px;
-}
+  }
+
   .accordion_question {
     margin-right: 32px;
-}
-.sec_title {
-  font-size: 20px;
-}
-.sub_title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+  }
+
+  .sec_title {
+    font-size: 20px;
+  }
+
+  .sub_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   .banner {
     height: 350px;
   }
@@ -591,23 +606,19 @@
     order: 2;
   }
 
-  .social_link {
+  .social_link,.social_icon {
     width: 24px;
     height: 24px;
   }
-
-
   .contact_left {
     width: 100%;
   }
 
   .contact_right {
-    width: 100%;
-    margin-top: 50px;
+ display: none;
   }
 
   .contact_inner {
-
     flex-wrap: wrap;
   }
 
@@ -619,16 +630,28 @@
   .why_card {
     padding: 20px;
   }
+  .contact_wrapper {
+    padding: 12px;
+}
+.contact_inner {
+  margin-bottom: 30px;
+}
+.contact_left .submit_btn{
+  margin-block: 10px;
+}
+
 }
 
 /* media query 575 */
 @media (max-width: 575px) {
   .sec_content {
     padding: 12px;
-}
+  }
+
   .sub_title {
     margin-bottom: 8px;
   }
+
   .banner {
     height: 300px;
   }
@@ -792,7 +815,7 @@
     padding-block: 24px;
   }
 
-  .footer_socials {
+  .footer_socials,.social_iconWrapp {
     width: 100%;
     order: 4;
   }
@@ -826,14 +849,21 @@
   .header_right {
     margin: 0 auto;
   }
+  .contact_wrapper {
+    padding: 10px;
+}
 
   #login-signup {
     padding: 12px;
   }
+
   .footer_btmSec {
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
+  .contact_left .submit_btn{
+    margin-block: 4px;
+  }
 }
 
 /*==============================>>> */

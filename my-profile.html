@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!-- bootstrap link -->
     <link rel="stylesheet" href="assets/fonts/font.css">
- <!-- fontawsome link -->
- <link rel="stylesheet" href="assets/css/fontawsome.css">
- <!-- slick css -->
- <link rel="stylesheet" href="assets/css/slick.css">
- <!-- slick theme css -->
- <link rel="stylesheet" href="assets/css/slick-theme.css">
- <!-- aos link -->
- <link rel="stylesheet" href="assets/css/aos.css">
- <!-- style link -->
- <link rel="stylesheet" href="assets/css/style.css">
- <!-- responsive link -->
- <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="assets/css/fontawsome.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- slick theme css -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- aos link -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive link -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                             <div class="avatar-content">
                                 <a href="#">
                                     <div class="profile-image"></div>
-                                    <span>Tom Holland</span>
+                                    <span>User Name</span>
                                 </a>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path
@@ -72,21 +72,21 @@
                             <div class="dropdown">
                                 <ul>
                                     <li>
-                                        <a href="">
+                                        <a href="my-profile.html">
                                             <div class="profile-dropdown-options profile-image-dropdown"></div>
-                                            Mon profil
+                                             My Profile
                                         </a>
                                     </li>
                                     <li>
                                         <a href="my-matches.html">
                                             <div class="profile-dropdown-options profile-image-stadium"></div>
-                                            Mes matchs
+                                             MY Matches
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
                                             <div class="profile-dropdown-options profile-image-logout"></div>
-                                            Se déconnecter
+                                            Log Out
                                         </a>
                                     </li>
                                 </ul>
@@ -100,9 +100,9 @@
             </div>
         </div>
     </header>
-   
-      <!--Leagues Pages Banner Section Start -->
-      <section class="pages-banner leagues-pages  bg-cover bg-no-repeat banner_myProfile">
+
+    <!--Leagues Pages Banner Section Start -->
+    <section class="pages-banner leagues-pages  bg-cover bg-no-repeat banner_myProfile">
         <div class="container">
             <div class="banner-content">
                 <ul class="leagues-ul">
@@ -122,76 +122,83 @@
     </section>
     <!--Leagues Pages Banner Section End -->
 
-<!-- Leagues Content Section Start -->
-<section class="my-profile">
-    <div class="container">
-        <div class="mmy-profile-inner">
-            <div class="profile-side">
-                <div class="profile-sec">
-                    <div class="user-img">
-                        <div class="update_img_user">                               
-                            <form id="profile-pic-form" >
-                                <input type="hidden" name="_token" value="Z7u7w8fCWm1pwiA00PRTMJ7C5dvKe7RFgMhl72PV" autocomplete="off">                     
-                                <input type="file" id="profile-pic-input" name="profile_picture" style="display: none;" accept="image/*" onchange="document.getElementById('profile-pic-form').submit()">                              
-                                            <span class="edit_pan" onclick="document.getElementById('profile-pic-input').click()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"></path>
-                                            </svg> </span> 
-                                        </form>
+    <!-- Leagues Content Section Start -->
+    <section class="my-profile">
+        <div class="container">
+            <div class="mmy-profile-inner">
+                <div class="profile-side">
+                    <div class="profile-sec">
+                        <div class="user-img">
+                            <div class="update_img_user">
+                                <form id="profile-pic-form">
+                                    <input type="hidden" name="_token" value="Z7u7w8fCWm1pwiA00PRTMJ7C5dvKe7RFgMhl72PV"
+                                        autocomplete="off">
+                                    <input type="file" id="profile-pic-input" name="profile_picture"
+                                        style="display: none;" accept="image/*"
+                                        onchange="document.getElementById('profile-pic-form').submit()">
+                                    <span class="edit_pan"
+                                        onclick="document.getElementById('profile-pic-input').click()"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z">
+                                            </path>
+                                        </svg> </span>
+                                </form>
+                            </div>
+                            <div class="user_name">
+                                <h3>Test123</h3>
+                            </div>
                         </div>
-                        <div class="user_name">
-                            <h3>Test123</h3>
-                        </div>
-                    </div>
-                    <div class="edit_option_bar">
-                        <div class="content-bar">
-                            <a href="my-profile.html" class="tabedit">Edit Profile
-                            </a>
-                        </div>
-                        <div class="content-bar">
-                            <a href="change-password.html" class="tabedit">Change Password</a>
+                        <div class="edit_option_bar">
+                            <div class="content-bar">
+                                <a href="my-profile.html" class="tabedit">Edit Profile
+                                </a>
+                            </div>
+                            <div class="content-bar">
+                                <a href="change-password.html" class="tabedit">Change Password</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sec">
-                <div class="user-content-update">
-                    <div class="">
-                        <div class="tab-content tab-content-1 active">
-                            <div class="user-content-box">
-                                <form action="#" method="POST" class="mt-60 ">
-                                    <div class="row">
-                                        <div class="mb-3 col-sm-6">
-                                            <input type="text" placeholder="Name"
-                                                class="form-control para" id="name" required="required"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="mb-3 col-sm-6">
-                                            <input type="text" placeholder="User Name" class="form-control para"
-                                                id="last-name" required="required" autocomplete="off">
-                                        </div>
-                                        <div class="mb-3 col-sm-6">
-                                            <input type="email" placeholder="E-mail" class="form-control para"
-                                                id="email" required="required" autocomplete="off">
-                                        </div>
-                                        <div class="mb-3 col-sm-6">
-                                            <input type="text" placeholder="Telephone" class="form-control para"
-                                                id="Phone" required="required" autocomplete="off">
-                                        </div>                                           
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Updated</button>                                     
+                <div class="col-sec">
+                    <div class="user-content-update">
+                        <div class="">
+                            <div class="tab-content tab-content-1 active">
+                                <div class="user-content-box">
 
-                                </form>
+                                    <form action="#" method="POST" class="mt-60 ">
+                                        <div class="row">
+                                            <div class="mb-3 col-sm-6">
+                                                <input type="text" placeholder="Name" class="form-control para"
+                                                    id="name" required="required" autocomplete="off">
+                                            </div>
+                                            <div class="mb-3 col-sm-6">
+                                                <input type="text" placeholder="User Name" class="form-control para"
+                                                    id="last-name" required="required" autocomplete="off">
+                                            </div>
+                                            <div class="mb-3 col-sm-6">
+                                                <input type="email" placeholder="E-mail" class="form-control para"
+                                                    id="email" required="required" autocomplete="off">
+                                            </div>
+                                            <div class="mb-3 col-sm-6">
+                                                <input type="text" placeholder="Telephone" class="form-control para"
+                                                    id="Phone" required="required" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Updated</button>
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Leagues Content Section End -->
+    </section>
+    <!-- Leagues Content Section End -->
 
-   
+
 
 
     <!-- footer section-->
@@ -247,7 +254,7 @@
                         <li class="footer_item">
                             <a href="personal-data-policy.html" class="footer_link"> Personal Data Policy</a>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <div class="footer_socials">

@@ -235,7 +235,7 @@ textarea::placeholder {
 .header_logoLnk {
   background-image: url(../images/logo.svg);
   height: 65px;
-  width: 140px;
+  width: 130px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -341,7 +341,7 @@ textarea::placeholder {
 
 /* banner section */
 .banner {
-  background-image: url("../images/football-banner.jpg");
+  background-image: url("../images/homepage_banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -355,7 +355,7 @@ textarea::placeholder {
 }
 
 .playinGuide_banner {
-  background-image: url("../images/playing-game.jpg");
+  background-image: url("../images/playing_guide.jpg");
 
 }
 
@@ -369,7 +369,7 @@ textarea::placeholder {
 }
 
 .banner_about {
-  background-image: url("../images/about_imges.jpg");
+  background-image: url("../images/about_banner.jpg");
 
 }
 
@@ -846,7 +846,7 @@ textarea::placeholder {
 }
 
 .footer_social {
-  border: 1px solid #fff;
+  border: 1px solid var(--white-color);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -857,8 +857,8 @@ textarea::placeholder {
 }
 
 .footer_social:hover {
-  border-color: var(--dark-blue);
-  background-color: var(--dark-blue);
+  border-color: var(--pre-blue);
+  background-color: var(--pre-blue);
 }
 
 .social_link {
@@ -956,16 +956,40 @@ textarea::placeholder {
   height: 400px;
   border-radius: 8px;
 }
+
 .playing_img--draft {
   background-image: url("../images/playin-guide1.jpg");
 
 }
-.playing_img--team{
+
+.playing_img--team {
   background-image: url("../images/playing-guide2.jpg");
 
 }
-.playing_img--lineup{
+
+.playing_img--lineup {
   background-image: url("../images/playing-guide3.jpg");
+
+}
+
+.playing_img--scoring {
+  background-image: url("../images/playing-guide4.png");
+}
+
+.playing_img--tracking {
+  background-image: url("../images/playing-guide5.webp");
+}
+
+.playing_img--wire {
+  background-image: url("../images/playing-guide6.jpg");
+}
+
+.playing_img--matchups {
+  background-image: url("../images/playing-guide7.jpg");
+}
+
+.playing_img--Playoffs {
+  background-image: url("../images/playing-guide8.jpg");
 
 }
 
@@ -1062,7 +1086,7 @@ textarea::placeholder {
 .singup_heading {
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -1075,7 +1099,7 @@ textarea::placeholder {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 16px;
+  /* padding-top: 16px; */
   border-radius: 8px;
 }
 
@@ -1125,13 +1149,16 @@ textarea::placeholder {
 }
 
 /* contact us section */
+
 .contact_wrapper {
   padding: 24px;
   border-radius: 4px;
   box-shadow: rgb(7 7 7 / 10%) 0px 7px 29px 0px
     /* box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px; */
 }
-
+.banner--contact{
+  background-image: url("../images/contact-banner-image.jpg");
+}
 .contact_inner {
   display: flex;
   justify-content: space-between;
@@ -1142,7 +1169,13 @@ textarea::placeholder {
   border: 1px solid #dee2e6;
   margin-bottom: 16px;
 }
-
+.contact_inner textarea:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
 .contact_left {
   width: 46%;
 }
@@ -1180,7 +1213,58 @@ textarea::placeholder {
 .contact_left .submit_btn {
   margin-top: 16px;
 }
+.socials{
+  margin-top: 10px;
+}
+.socials_wrapper{
+  display: inline-flex;
+  gap: 10px;
+}
+.socials .sub_title{
+  margin-bottom: 4px;
+}
+.social_iconWrapp {
+  border: 1px solid var(--black-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.social_iconWrapp:hover{
+  background-color: var(--blue-light);
+  border-color: var(--blue-light);
+}
+.social_iconWrapp:hover .social_icon{
+  filter: invert(1);
+}
+.social_iconWrapp:hover .social_icon--twitter{
+  filter: invert(0);
+}
+.social_icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s linear;
+}
 
+.social_icon--fb{
+  background-image: url("../images/fb.png");
+}
+.social_icon--twitter{
+  background-image: url("../images/twitter.svg");
+  filter: invert(1);
+}
+.social_icon--insta{
+  background-image: url("../images/insta.png");
+}
 /* =======================>>> */
 
 
@@ -1896,19 +1980,16 @@ img {
 }
 
 /* AOS Overflow CSS End */
-
-
 /* Pages CSS Start */
-
-/* .pages-banner {
+.pages-banner {
   height: 450px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-} */
-/* 
+}
+
 .pages-banner::after {
   position: absolute;
   content: '';
@@ -1931,7 +2012,7 @@ img {
   text-align: center;
 }
 
- */
+
 
 
 /* Game Instructions Page CSS Start */
@@ -2521,7 +2602,8 @@ td.match-position p {
 .team-view-header h4 {
   font-size: 18px;
   text-align: center;
-  color: #000;
+  /* color: #000; */
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -2572,7 +2654,7 @@ td.player-dp img {
 
 .matches-table th {
   background: var(--pre-blue) !important;
-  color: #000 !important;
+  color:var(--white-color) !important;
 }
 
 .match-team-logo span {
@@ -2786,7 +2868,7 @@ table tr:nth-child(odd):hover {
 
 .fusball_leagues-inner-content table th {
   background: var(--pre-blue) !important;
-  color: #000 !important;
+  color:var(--white-color) !important;
 }
 
 section.destination.firsts {
@@ -3076,6 +3158,7 @@ div#mySidenavs {
 .avatar-content svg {
   height: 20px;
   width: 20px;
+  cursor: pointer;
   background: var(--white-color);
 }
 
@@ -3311,15 +3394,16 @@ span.edit_pan i {
   font-size: 1rem;
   border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  /* color: #000; */
   cursor: pointer;
+  border: 1px solid transparent;
   transition: 0.4s all ease-in-out;
 }
 
 .user-content-box button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color:var(--white-color);
+  color:var(--blue-light);
   box-shadow: var(--pre-blue) 0px 3px 8px;
+  border-color: var(--blue-light);
 }
 
 .reset-password {
@@ -3390,7 +3474,8 @@ td.match-score h4 {
 .plyr-headr .team-logo span {
   font-size: 22px;
   font-weight: 700;
-  color: #000;
+  /* color: #000; */
+  color:var(--white-color);
   padding: 0 5px;
 }
 
@@ -3429,7 +3514,8 @@ td.match-score h4 {
 .plyr-headr .team-logo h6 {
   text-transform: capitalize;
   font-size: 17px;
-  color: #000;
+  /* color: #000; */
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -3445,20 +3531,22 @@ td.match-score h4 {
 .plyr-headr .match-details h6 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #000;
+  color:var(--white-color);
   font-weight: 600;
 }
 
 .plyr-headr .match-details p {
   font-size: 17px;
   margin-bottom: 10px;
-  color: #000;
+  /* color: #000; */
+  color:var(--white-color);
 }
 
 .plyr-headr .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
-  color: #000;
+  /* color: #000; */
+  color:var(--white-color);
 }
 
 .fusball_leagues tbody tr td p {
@@ -3495,14 +3583,16 @@ td.player-name p {
 .palyer-header .team-logo h6 {
   text-transform: capitalize;
   font-size: 16px;
-  color: #000;
+  /* color: #000; */
+  color: var(--white-color);
   font-weight: 600;
 }
 
 .palyer-header .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
-  color: #000;
+  /* color: #000; */
+  color: var(--white-color);
 }
 
 .match-details .flex {
