@@ -121,6 +121,8 @@ $(document).ready(function() {
       dots: true,
       autoplay: true,
       autoplaySpeed: 1000,
+      prevArrow: false,
+      nextArrow: false,
       responsive: [
         {
           breakpoint: 1024,
@@ -137,4 +139,14 @@ $(document).ready(function() {
          
       ]
   });
+});
+// scroll header navigation
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  if (window.scrollY > 80) {
+      header.classList.add('shadow');
+  } else {
+      header.classList.remove('shadow');
+  }
 });

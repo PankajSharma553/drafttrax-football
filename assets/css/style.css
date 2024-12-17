@@ -218,6 +218,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   z-index: 5;
+  transition: box-shadow 0.3s ease;
   background-color: var(--blue-light);
 }
 
@@ -379,11 +380,11 @@ textarea::placeholder {
 }
 
 .banner_leagues {
-  background-image: url("../images/leagues-icons.jpg");
+  background-image: url("../images/league_banner.webp");
 }
 
 .banner_matchesDtls {
-  background-image: url("../images/matches-details.jpg");
+  background-image: url("../images/mateches-details-banner.webp");
 }
 
 .banner::after {
@@ -1100,6 +1101,7 @@ textarea::placeholder {
   width: 100%;
   margin: 0 auto;
   /* padding-top: 16px; */
+  padding-bottom: 12px;
   border-radius: 8px;
 }
 
@@ -1157,7 +1159,7 @@ textarea::placeholder {
     /* box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px; */
 }
 .banner--contact{
-  background-image: url("../images/contact-banner-image.jpg");
+  background-image: url("../images/contact-banner.jpg");
 }
 .contact_inner {
   display: flex;
@@ -1247,8 +1249,8 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
@@ -2133,9 +2135,10 @@ img {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   border-radius: 8px;
   padding: 24px;
+  z-index: 1;
 }
 
 #login-signup {
@@ -2148,7 +2151,8 @@ img {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: var(--blue-light);
+  /* color: var(--blue-light); */
+  color: var(--white-color);
 }
 
 #login-signup h4 {
@@ -2220,7 +2224,7 @@ fieldset {
 }
 
 .jump-text {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .jump-text a {
@@ -2248,6 +2252,31 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #d7d6d6;
+}
+
+.signup_inner {
+  background-image: url("../images/contact.jpg");
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  background-attachment: fixed;
+  max-width: 620px;
+  margin: 0 auto;
+  position: relative;
+}
+.signup_inner::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 8px;
+  content: "";
+  background-color: rgb(0 0 0 / 20%);
 }
 
 /* Login Signup Form Pages CSS Start */
@@ -2411,7 +2440,9 @@ fieldset {
 .back-btn a:hover {
   opacity: 0.9;
 }
-
+.back-btn svg{
+filter: invert(1);
+}
 
 .palyer-header {
   color: #fff;
@@ -3717,7 +3748,7 @@ td.player-name p {
 }
 
 .banner_matches {
-  background-image: url("../images/matches.jpg");
+  background-image: url("../images/matches_banner.jpg");
 }
 
 .after-banner-text-wrap strong {
@@ -4029,11 +4060,11 @@ fieldset {
 }
 
 .banner_teamView {
-  background-image: url("../images/team-view.jpg");
+  background-image: url("../images/teamViewr_banner.jpg");
 }
 
 .banner_teamPlayer {
-  background-image: url("../images/team_player.jpg");
+  background-image: url("../images/teamPlayer_banner.jpg");
 }
 
 .banner_myProfile {
@@ -4042,8 +4073,10 @@ fieldset {
 
 .banner_myMatches {
   background-image: url("../images/my_matches.jpg");
+}
+.matchDtls_banner{
+  background-image: url("../images/match-detail-banner.jpg");
 
 }
-
 
 /* Footer Pages CSS End*/
